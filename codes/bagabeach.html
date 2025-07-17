@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Slideshow Images</title>
+    <style>
+        .container{
+            display:flex;
+        }
+      .slider {
+        width: 500px;
+        height: 300px;
+        background-color: yellow;
+        margin-left: 0px;
+        margin-right: 50px;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+      
+      
+      }
+      .image-container {
+        width: 1500px;
+        background-color: pink;
+        height: 300px;
+        clear: both;
+        position: relative;
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 2s;
+      }
+      .slide {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+      }
+      #slide-1:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-2:target ~ .image-container {
+        left: -500px;
+      }
+      #slide-3:target ~ .image-container {
+        left: -1000px;
+      }
+      #slide-4:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-5:target ~ .image-container {
+        left: -500px;
+      }
+      #slide-6:target ~ .image-container {
+        left: -1000px;
+      }
+      #slide-7:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-8:target ~ .image-container {
+        left: -500px;
+      }
+      #slide-9:target ~ .image-container {
+        left: -1000px;
+      }
+      .buttons {
+        position: relative;
+        top: -20px;
+      }
+      .buttons a {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50px;
+        background-color: lightgreen;
+      }
+      .title{
+        display:flex;
+       
+      }
+      .heading {
+        width: 500px;
+        height: 300px;
+        margin-left: 0px;
+        margin-right: 50px;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+      
+      
+      }
+    </style>
+  </head>
+  <body>
+    <br><br><br><br>
+    <div class="container">
+    <div class="slider">
+      <span id="slide-1"></span>
+      <span id="slide-2"></span>
+      <span id="slide-3"></span>
+      <div class="image-container">
+        <img src="https://www.myboutiquehotel.com/photos/110837/casa-cat-ba-beachfront-boutique-hotel-holbox-island-149-93882-1110x700.jpg" class="slide" width="500" height="300" />
+        <img src="https://images.thrillophilia.com/image/upload/s--58hF-d5k--/c_fill,h_480,q_auto,w_640/f_auto,fl_strip_profile/v1/images/photos/000/297/810/original/1591285743_4.png.jpg?1591285743" class="slide" width="500" height="300" />
+        <img src="https://nimbus-baga-beach-resort-goa.booked.net/data/Photos/OriginalPhoto/7259/725993/725993068/Nimbus-Baga-Beach-Resort-Goa-Exterior.JPEG" class="slide" width="500" height="300" />
+        
+      </div>
+     
+     
+      <div class="buttons">
+        <a href="#slide-1"></a>
+        <a href="#slide-2"></a>
+        <a href="#slide-3"></a>
+       
+      </div>
+      </div>
+   
+   
+    <div class="slider">
+        <span id="slide-4"></span>
+        <span id="slide-5"></span>
+        <span id="slide-6"></span>
+        <div class="image-container">
+          <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/210048772.jpg?k=4216fc57ae1747ab92a2a4a54b3b84486cc7d2fa8182177ecd3669ab167c0b82&o=&hp=1" class="slide" width="500" height="300" />
+          <img src="https://q-xx.bstatic.com/xdata/images/hotel/max500/458322553.jpg?k=bef7a8b041611f2d08586fc892152152019df34a0c39cea541cad750d4a07279&o=" class="slide" width="500" height="300" />
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6YPTzb8-vpupGFLdnycO0r3qEzLZ64Gd_2HV3Wu6a76UDGz4qa122hZGXB19j7zp3lyM&usqp=CAU " class="slide" width="500" height="300" />
+        </div>
+       
+        <div class="buttons">
+          <a href="#slide-4"></a>
+          <a href="#slide-5"></a>
+          <a href="#slide-6"></a>
+        </div>
+      </div>
+      <div class="slider">
+        <span id="slide-7"></span>
+        <span id="slide-8"></span>
+        <span id="slide-9"></span>
+        <div class="image-container">
+          <img src="https://assets.traveltriangle.com/blog/wp-content/uploads/2015/12/Baga-Beach-Resort.jpg" class="slide" width="500" height="300" />
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/9c/5a/83/the-baga-beach-resort.jpg?w=700&h=-1&s=1" class="slide" width="500" height="300" />
+          <img src="https://i.pinimg.com/originals/da/0b/8d/da0b8d35a0fef4f12d432d094204701b.jpg" class="slide" width="500" height="300" />
+          
+        </div>
+       
+       
+        <div class="buttons">
+          <a href="#slide-7"></a>
+          <a href="#slide-8"></a>
+          <a href="#slide-9"></a>
+         
+        </div>
+        </div>
+     
+    </div>
+    <div class="title">
+        <div class="heading">
+        <h1 style="color:#4b2b9c;">Acorn Beach Resort</h1>
+        <h1 style="color:#4b2b9c;">$1000-$5000</h1><br><br>
+        <button type="submit" style="padding:10px;background-color:rgb(101, 231, 45);"><a href="D:\Academics\sem 2\UID Lab implementation\Background images\paymentform1.html"> Proceed with payment</a></button>
+      </div>
+  
+      <div class="heading">
+        <h1 style="color:#4b2b9c;">The Baga Beach Resort</h1>
+        <h1 style="color:#4b2b9c;">$6000-$10000</h1><br><br>
+        <button type="submit" style="padding:10px;background-color:rgb(101, 231, 45);"><a href="D:\Academics\sem 2\UID Lab implementation\Background images\paymentform2.html"> Proceed with payment</a></button>
+      </div>
+      <div class="heading">
+        <h1 style="color:#4b2b9c;">The Ronil Royale</h1>
+        <h1 style="color:#4b2b9c;">$11000-$15000</h1><br><br>
+        <button type="submit" style="padding:10px;background-color:rgb(101, 231, 45);"><a href="D:\Academics\sem 2\UID Lab implementation\Background images\paymentform3.html"> Proceed with payment</a></button>
+      </div>
+    </div>
+      
+  
+  
+  </body>
+</html>

@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+    <head>
+        
+    </head> <style>
+        .{
+            margin:0px;
+            padding:0px;
+            font-family: sans-serif;
+        }
+        body{
+            display:flex;
+            justify-content: center;
+            height:100vh;
+            align-items: center;
+        }
+        .container{
+            display:flex;
+        }
+        .card{
+            height:250px;
+            margin:12px;
+            box-shadow: 5px 5px 20px black;
+            overflow: hidden;
+        }
+        img{
+            height:250px;
+            width:350px;
+            border-radius:3px ;
+         
+        }
+        .intro{
+            height:130px;
+            width:350px;
+            padding: 6px;
+            box-sizing: border-box;
+            position: absolute;
+            bottom: 240px;
+          
+            color: white;
+            transition: .5s ;
+        }
+        h1{
+            margin:10px;
+            font-size: 40px;
+
+        }
+        p{
+            font-size:20px ;
+            margin: 20px;
+            visibility: hidden;
+            opacity: 0;
+
+        }
+       
+        .card:hover{
+            cursor:pointer
+        }
+        .card:hover .intro{
+            height:300px;
+            bottom:240px;
+            background: black;
+        }
+        .card:hover p{
+            opacity: 1;
+            visibility: visible;
+        }
+        .card:hover img{
+            transform: scale(1.1) rotate(-3deg);
+        }
+        body{
+            background-color: azure;
+        }
+
+    </style>
+        <body>
+        <div class="container">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6-YKREF7f1oeBPuS24kUyMCX5kNWECWCmQQ&usqp=CAU">
+                <div class="intro">
+                    <h1>Daegu Arboretum</h1>
+                    <p>Daegu Arboretum is one of the largest cities in South Korea, and coupled with its rich and ancient culture, it has a number of scenic attractions and beautiful mountains.</p>
+                    <form action="D:\Academics\sem 2\UID Lab implementation\Background images\hotelform16.html">
+                        <input type="submit" value="continue with Daegu Arboretum">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+           
+            <img src="https://d1jwpidumdzfac.cloudfront.net/thumb/Review-e-world-22-1675300854_400.jpg" >
+            <div class="intro">
+            <h1>E-World</h1>
+            <p>E-World is the theme park that surrounds Woobang Tower-the most noticeable feature of the Daegu skyline. It features a waterfall, fountains and lighting displays</p>
+            <form action="D:\Academics\sem 2\UID Lab implementation\Background images\hotelform17.html">
+                <input type="submit" value="continue E-World">
+            </form>
+        </div>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlfxjmOxWPcfnGlOPhpW7sZgwSxZM1TmSB3sMoril2Rja2st7dKkkMB8WmfiI9d8XdywA&usqp=CAU">
+            <div class="intro">
+                <h1>Wolgwang Waterfront Park</h1>
+                <p>Gwanghwamun Square is a public square on Sejongno, Jongno-gu, Seoul, South Korea.</p>
+                <form action="D:\Academics\sem 2\UID Lab implementation\Background images\hotelform18.html">
+                    <input type="submit" value="continue wolgwang waterfront park">
+                </form>
+            </div>
+        </div>
+    </head>
+   </body>
+</html>

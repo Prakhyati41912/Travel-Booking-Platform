@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+          *{
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+          } 
+          body
+          {
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center; 
+          }
+          .container
+          {
+            display: flex;
+          }
+         .card
+         {
+          height: 250px;
+          margin: 50px;
+          box-shadow: 5px 5px 20px black ;
+          overflow: hidden;
+
+         }
+          img
+          {
+            height: 250px;
+            width: 350px;
+            border-radius: 3px;
+          }
+          .intro
+          {
+            height: 70px;
+            width: 350px;
+            padding: 10px;
+            box-sizing: border-box;
+            position: absolute;
+            bottom: 350px;
+            background: rbg(27, 27, 27, .5); 
+            color: white;
+            transition: .5s;
+          }
+          h1
+          {
+             margin: 10px;
+             font-size: 40px;
+          }
+          p
+          {
+            font-size:  20px;
+            margin: 20px;
+            visibility: hidden;
+            opacity: 0;
+          }  
+          .card:hover
+          {
+            cursor: pointer;
+
+          }
+          .card:hover .intro
+          {
+            height: 300px;
+            bottom: 240px;
+            background: black;
+          }
+          .card:hover p
+          {
+             opacity: 1;
+             visibility: visible;
+          }
+          .card:hover img
+          {
+            transform: scale(1.1) rotate(-3deg);
+
+          }
+          body{
+            background-color: azure;
+          }
+          </style>
+
+          
+           
+    </head>
+    <body>
+        <div class="container">
+            <div class="card ">
+                <img src="D:\Academics\sem 2\physics\maharashtra.webp" alt="maharashtra">
+                <div class="intro">
+                    <h1>Maharashtra </h1>
+                    <p >Maharashtra is one of India's largest commercial and industrial centres, which has led to its being called the gateway of India. Maharashtra is also famous for its culture and beauty</p>
+                    <form action="D:\Academics\sem 2\UID Lab implementation\Background images\maharastra.html">
+                        
+                        <input type="submit" value="continue with maharashtra">
+                      </form> 
+                </div>
+            </div>
+                <div class="card">
+                    <img src="D:\Academics\sem 2\physics\kerala.jpg" alt="kerala">
+                    <div class="intro">
+                        <h1>Kerala</h1>
+                        <p>Kerala is blessed with a unique set of geographical features that have made it one of the most sought after tourist destinations in Asia</p>
+                        <form action="D:\Academics\sem 2\UID Lab implementation\Background images\kerala.html"><br><br>
+                        
+                            <input type="submit" value="continue with kerala">
+                          </form> 
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="D:\Academics\sem 2\physics\goa.jpg" alt="goa">
+                    <div class="intro">
+                        <h1>Goa</h1>
+                        <p>Formerly a Portuguese colony, it is endowed with a variety of attractions including palm fringed beaches, miles of golden sands, lush green country-side, an incredible mosaic of culture</p>
+                        <form action="D:\Academics\sem 2\UID Lab implementation\Background images\goa.html"><br>
+                        
+                            <input type="submit" value="continue with goa">
+                          </form> 
+
+                    </div>
+                </div>
+               
+            </div>
+         </body>   
+</html>

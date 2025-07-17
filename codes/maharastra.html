@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+          *{
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+          } 
+          body
+          {
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center; 
+          }
+          .container
+          {
+            display: flex;
+          }
+         .card
+         {
+          height: 250px;
+          margin: 50px;
+          box-shadow: 5px 5px 20px black ;
+          overflow: hidden;
+
+         }
+          img
+          {
+            height: 250px;
+            width: 350px;
+            border-radius: 3px;
+          }
+          .intro
+          {
+            height: 70px;
+            width: 350px;
+            padding: 6px;
+            box-sizing: border-box;
+            position: absolute;
+            bottom: 350px;
+            background: rbg(27, 27, 27, .5); 
+            color: white;
+            transition: .5s;
+          }
+          h1
+          {
+             margin: 10px;
+             font-size: 40px;
+          }
+          p
+          {
+            font-size:  20px;
+            margin: 20px;
+            visibility: hidden;
+            opacity: 0;
+          }  
+          .card:hover
+          {
+            cursor: pointer;
+
+          }
+          .card:hover .intro
+          {
+            height: 300px;
+            bottom: 350px;
+            background: black
+          }
+          .card:hover p
+          {
+             opacity: 1;
+             visibility: visible;
+          }
+          .card:hover img
+          {
+            transform: scale(1.1) rotate(-3deg);
+
+          }
+          body{
+            background-color: azure;
+          }
+          </style>
+
+          
+           
+    </head>
+    <body>
+        <div class="container">
+            <div class="card ">
+                <img src="https://assets.traveltriangle.com/blog/wp-content/uploads/2020/01/Weather-Of-Mumbai-In-June_20th-jan.jpg" alt="Mumbai">
+                <div class="intro">
+                    <h1>Mumbai </h1>
+                    <p>Mumbai offers an array of both historical and cultural sites to both Indian and foreign tourists. The Gateway of India is a one of the most iconic structures in Mumbai</p>
+                    <form action="D:\Academics\sem 2\UID Lab implementation\Background images\hotelform1.html">
+                        
+                        <input type="submit" value="continue with Mumbai">
+                      </form> 
+                </div>
+            </div>
+                <div class="card">
+                    <img src="https://im.whatshot.in/img/2019/Jul/shirdi-time-to-visit-cropped-1564136604.jpg" alt=" Shiridi ">
+                    <div class="intro">
+                        <h1>Shiridi</h1>
+                        <p>The Sai Heritage Village in Shirdi is a unique combination of the beauty of nature and the blessings of Sai Baba. It showcases the major events that took place at that time</p>
+                        <form action="D:\Academics\sem 2\UID Lab implementation\Background images\hotelform2.html">
+                        
+                            <input type="submit" value="continue with Shiridi">
+                          </form> 
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.holidify.com/images/bgImages/MAHABALESHWAR.jpg" alt=" Mahabaleshwar ">
+                    <div class="intro">
+                        <h1>Mahabaleshwar</h1>
+                        <p>Mahabaleshwar Hill Station is the most famous hill station of Maharashtra which is famous as Queen of Sahyadri Hills, Mahabaleshwar hill station is very easily accessible to Pune </p>
+                        <form action="D:\Academics\sem 2\UID Lab implementation\Background images\hotelform3.html">
+                        
+                            <input type="submit" value="continue with Mahabaleshwar">
+                          </form> 
+
+                    </div>
+                </div>
+               
+            </div>
+         </body>   
+</html>

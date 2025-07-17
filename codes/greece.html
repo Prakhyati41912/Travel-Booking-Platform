@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+          *{
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+          } 
+          body
+          {
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center; 
+          }
+          .container
+          {
+            display: flex;
+          }
+         .card
+         {
+          height: 250px;
+          margin: 50px;
+          box-shadow: 5px 5px 20px black ;
+          overflow: hidden;
+
+         }
+          img
+          {
+            height: 250px;
+            width: 350px;
+            border-radius: 3px;
+          }
+          .intro
+          {
+            height: 150px;
+            width: 350px;
+            padding: 6px;
+            box-sizing: border-box;
+            position: absolute;
+            bottom: 240px;
+            background: rbg(27, 27, 27, .5); 
+            color: white;
+            transition: .5s;
+          }
+          h1
+          {
+             margin: 10px;
+             font-size: 40px;
+          }
+          p
+          {
+            font-size:  20px;
+            margin: 20px;
+            visibility: hidden;
+            opacity: 0;
+          }  
+          .card:hover
+          {
+            cursor: pointer;
+
+          }
+          .card:hover .intro
+          {
+            height: 220px;
+            bottom: 350px;
+            background: black;
+          }
+          .card:hover p
+          {
+             opacity: 1;
+             visibility: visible;
+          }
+          .card:hover img
+          {
+            transform: scale(1.1) rotate(-3deg);
+
+          }
+          body{
+            background-color: azure;
+          }
+          </style>
+
+          
+           
+    </head>
+    <body>
+        <div class="container">
+            <div class="card ">
+                <img src="https://cdn.kimkim.com/files/a/images/ef80bf6d27c3b6eb60a534712d60d3604a757b2d/big-e6f8c61e72a89be6dfc9ed5c7c65a562.jpg" alt="Athens">
+                <div class="intro">
+                    <h1>Athens</h1>
+                    <p>Athens was the largest and most influential of the Greek city-states. It had many fine buildings and was named after Athena, the goddess of wisdom and warfare</p>
+                    <form action="D:\Academics\sem 2\UID Lab implementation\Background images\athens.html">
+                        
+                        <input type="submit" value="continue with Athens">
+                      </form> 
+                </div>
+            </div>
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMXmD21-8JYCss0TbBFaW4b4KhTHuBBLn3gA&usqp=CAU" alt="Santorini">
+                    <div class="intro">
+                        <h1>Santorini</h1>
+                        <p>Santorini is a fantastic Cycladic island in the southern Aegean Sea with astonishing volcanic scenery and world-famous sunset vistas. It comprises a luxury-oriented destination</p>
+                        <form action="D:\Academics\sem 2\UID Lab implementation\Background images\santorini.html">
+                        
+                            <input type="submit" value="continue with Santorini">
+                          </form> 
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKZJjbPJ_rlIlpxk6q9_vEmy3oE8CxtZTFVQ&usqp=CAU" alt="Naxos">
+                    <div class="intro">
+                        <h1>Naxos</h1>
+                        <p>Naxos is the largest island in the Cyclades and boasts endless, pristine sandy beaches, verdant mountains and ancient archeological sites and marble quarries.</p>
+                        <form action="D:\Academics\sem 2\UID Lab implementation\Background images\naxos.html">
+                        
+                            <input type="submit" value="continue with Naxos">
+                          </form> 
+
+                    </div>
+                </div>
+               
+            </div>
+         </body>   
+</html>

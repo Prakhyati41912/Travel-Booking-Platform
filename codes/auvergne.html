@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+          *{
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+          } 
+          body
+          {
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center; 
+          }
+          .container
+          {
+            display: flex;
+          }
+         .card
+         {
+          height: 250px;
+          margin: 50px;
+          box-shadow: 5px 5px 20px black ;
+          overflow: hidden;
+
+         }
+          img
+          {
+            height: 250px;
+            width: 350px;
+            border-radius: 3px;
+          }
+          .intro
+          {
+            height: 70px;
+            width: 350px;
+            padding: 6px;
+            box-sizing: border-box;
+            position: absolute;
+            bottom: 350px;
+            background: rbg(27, 27, 27, .5); 
+            color: white;
+            transition: .5s;
+          }
+          h1
+          {
+             margin: 10px;
+             font-size: 40px;
+          }
+          p
+          {
+            font-size:  20px;
+            margin: 20px;
+            visibility: hidden;
+            opacity: 0;
+          }  
+          .card:hover
+          {
+            cursor: pointer;
+
+          }
+          .card:hover .intro
+          {
+            height: 300px;
+            bottom: 240px;
+            background: black;
+          }
+          .card:hover p
+          {
+             opacity: 1;
+             visibility: visible;
+          }
+          .card:hover img
+          {
+            transform: scale(1.1) rotate(-3deg);
+
+          }
+          body{
+            background-color: azure;
+          }
+          </style>
+
+          
+           
+    </head>
+    <body>
+        <div class="container">
+            <div class="card ">
+                <img src="lyon.jpeg" alt="Lyon">
+                <div class="intro">
+                    <h1>Lyon</h1>
+                    <p>Lyon supplies a gratifying taste of French life  there are 16 restaurants from the Michelin. People also love visiting Lyon during the “Fête des lumières”</p>
+                    <form action="D:\Academics\sem 2\UID Lab implementation\Background images\hotelform22.html">
+                        
+                        <input type="submit" value="continue with Lyon">
+                      </form> 
+                </div>
+            </div>
+                <div class="card">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/c2/15/e2/hydrogene-sports.jpg?w=600&h=600&s=1" alt="Annecy">
+                    <div class="intro">
+                        <h1>Annecy</h1>
+                        <p>Annecy has many Catholic churches worth visiting, where you'll find beautiful stained-glass windows, impressive grand organs and Medieval paintings.</p>
+                        <form action="D:\Academics\sem 2\UID Lab implementation\Background images\hotelform23.html">
+                        
+                            <input type="submit" value="continue with Annecy">
+                          </form> 
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="graneelle.jpg" alt="Grenoble">
+                    <div class="intro">
+                        <h1>Grenoble</h1>
+                        <p>Grenoble is a city in France known for its winter sports, hiking.It's a pretty city surrounded by mountains and it sits in between the Drac and Isère rivers.</p>
+                        <form action="D:\Academics\sem 2\UID Lab implementation\Background images\hotelform24.html">
+                        
+                            <input type="submit" value="continue with Grenoble">
+                          </form> 
+
+                    </div>
+                </div>
+               
+            </div>
+         </body>   
+</html>

@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+          *{
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+          } 
+          body
+          {
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center; 
+          }
+          .container
+          {
+            display: flex;
+          }
+         .card
+         {
+          height: 250px;
+          margin: 50px;
+          box-shadow: 5px 5px 10px black ;
+          overflow: hidden;
+
+         }
+          img
+          {
+            height: 250px;
+            width: 350px;
+            border-radius: 3px;
+          }
+          .intro
+          {
+            height: 200px;
+            width: 350px;
+            padding: 6px;
+            box-sizing: border-box;
+            position: absolute;
+            bottom: 240px;
+            background: rbg(27, 27, 27, .5); 
+            color: white;
+            transition: .5s;
+          }
+          h1
+          {
+             margin: 10px;
+             font-size: 40px;
+          }
+          p
+          {
+            font-size:  20px;
+            margin: 20px;
+            visibility: hidden;
+            opacity: 0;
+          }  
+          .card:hover
+          {
+            cursor: pointer;
+
+          }
+          .card:hover .intro
+          {
+            height: 300px;
+            bottom: 240px;
+            background: black
+          }
+          .card:hover p
+          {
+             opacity: 1;
+             visibility: visible;
+          }
+          .card:hover img
+          {
+            transform: scale(1.1) rotate(-3deg);
+
+          }
+          body{
+            background-color: azure;
+          }
+          </style>
+
+          
+           
+    </head>
+    <body>
+        <div class="container">
+            <div class="card ">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Munnar_hillstation_kerala.jpg/1200px-Munnar_hillstation_kerala.jpg" alt="Munnar">
+                <div class="intro">
+                    <h1>Munnar </h1>
+                    <p>Munnar is the place to become one with nature. From sprawling tea plantations to green hills and cascading waterfalls, everything in Munnar is a treat for the eyes.this is the famous place</p>
+                    <form action="D:\Academics\sem 2\UID Lab implementation\Background images\hotelform4.html">
+                        
+                        <input type="submit" value="continue with Munnar">
+                      </form> 
+                </div>
+            </div>
+                <div class="card">
+                    <img src="https://images.thrillophilia.com/image/upload/s--xsrWWYqs--/c_fill,g_center,h_642,q_auto,w_1280/f_auto,fl_strip_profile/v1/images/photos/000/012/947/original/1513318534_India_Sea_Ships_450719.jpg.jpg" alt=" Kerala Backwaters ">
+                    <div class="intro">
+                        <h1>Kerala Backwaters</h1>
+                        <p>The scenic backwaters of Kerala comprise a serene stretch of lakes, canals and lagoons  </p>
+                        <form action="D:\Academics\sem 2\UID Lab implementation\Background images\hotelform5.html">
+                        
+                            <input type="submit" value="continue with Kerala Backwaters">
+                          </form> 
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJuoi1MQA9ofjkia9rKiAMw0Tg5jq0jrIJWg&usqp=CAU" alt=" Kochi ">
+                    <div class="intro">
+                        <h1>Kochi</h1>
+                        <p>Popularly known as the Queen of Arabian Sea, the city also flaunts one of the finest natural harbours of the world and was the centre of the world spice trade for many centuries.this is the famous place</p>
+                        <form action="D:\Academics\sem 2\UID Lab implementation\Background images\hotelform6.html">
+                        
+                            <input type="submit" value="continue with Kochi">
+                          </form> 
+
+                    </div>
+                </div>
+               
+            </div>
+         </body>   
+</html>

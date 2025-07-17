@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Slideshow Images</title>
+    <style>
+        .container{
+            display:flex;
+        }
+      .slider {
+        width: 500px;
+        height: 300px;
+        background-color: yellow;
+        margin-left: 0px;
+        margin-right: 50px;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+      
+      
+      }
+      .image-container {
+        width: 1500px;
+        background-color: pink;
+        height: 300px;
+        clear: both;
+        position: relative;
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 2s;
+      }
+      .slide {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+      }
+      #slide-1:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-2:target ~ .image-container {
+        left: -500px;
+      }
+      #slide-3:target ~ .image-container {
+        left: -1000px;
+      }
+      #slide-4:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-5:target ~ .image-container {
+        left: -500px;
+      }
+      #slide-6:target ~ .image-container {
+        left: -1000px;
+      }
+      #slide-7:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-8:target ~ .image-container {
+        left: -500px;
+      }
+      #slide-9:target ~ .image-container {
+        left: -1000px;
+      }
+      .buttons {
+        position: relative;
+        top: -20px;
+      }
+      .buttons a {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50px;
+        background-color: lightgreen;
+      }
+      .title{
+        display:flex;
+       
+      }
+      .heading {
+        width: 500px;
+        height: 300px;
+        margin-left: 0px;
+        margin-right: 50px;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+      
+      
+      }
+    </style>
+  </head>
+  <body>
+    <br><br><br><br>
+    <div class="container">
+    <div class="slider">
+      <span id="slide-1"></span>
+      <span id="slide-2"></span>
+      <span id="slide-3"></span>
+      <div class="image-container">
+        <img src="https://pix10.agoda.net/hotelImages/9424/-1/c5f336653776b02702940009a0f2c1ba.jpg?ca=0&ce=1&s=702x392" class="slide" width="500" height="300" />
+        <img src="https://pix10.agoda.net/property/10579120/372773932/b258dddb507ab5d427944dc9e0ceee66.jpg?ca=21&ce=0&s=702x392" class="slide" width="500" height="300" />
+        <img src="https://dimg04.c-ctrip.com/images//200s190000016sht7D454_R_550_412.jpg" class="slide" width="500" height="300" />
+        
+      </div>
+     
+     
+      <div class="buttons">
+        <a href="#slide-1"></a>
+        <a href="#slide-2"></a>
+        <a href="#slide-3"></a>
+       
+      </div>
+      </div>
+   
+   
+    <div class="slider">
+        <span id="slide-4"></span>
+        <span id="slide-5"></span>
+        <span id="slide-6"></span>
+        <div class="image-container">
+          <img src="https://pix10.agoda.net/hotelImages/23131209/-1/25e65564642d7a18d5d7f7223f821d22.jpg?ce=0&s=702x392" class="slide" width="500" height="300" />
+          <img src="https://pix10.agoda.net/hotelImages/119/1197048/1197048_16060714460043232737.jpg?ca=13&ce=1&s=702x392" class="slide" width="500" height="300" />
+          <img src="https://content.r9cdn.net/rimg/himg/64/3f/82/revato-2450802-37996176-038392.jpg?width=500&height=350&xhint=571&yhint=187&crop=true" class="slide" width="500" height="300" />
+        </div>
+       
+        <div class="buttons">
+          <a href="#slide-4"></a>
+          <a href="#slide-5"></a>
+          <a href="#slide-6"></a>
+        </div>
+      </div>
+      <div class="slider">
+        <span id="slide-7"></span>
+        <span id="slide-8"></span>
+        <span id="slide-9"></span>
+        <div class="image-container">
+          <img src="https://res.klook.com/klook-hotel/image/upload/trip/200f0n000000dygqoB649_R_550_412_R5.jpg" class="slide" width="500" height="300" />
+          <img src="https://pix10.agoda.net/hotelImages/119/1197048/1197048_16051012260042189998.jpg?ca=6&ce=1&s=702x392" class="slide" width="500" height="300" />
+          <img src="https://dimg04.c-ctrip.com/images//200m0e00000075zge9324_R_550_412.jpg" class="slide" width="500" height="300" />
+          
+        </div>
+       
+       
+        <div class="buttons">
+          <a href="#slide-7"></a>
+          <a href="#slide-8"></a>
+          <a href="#slide-9"></a>
+         
+        </div>
+        </div>
+     
+    </div>
+    <div class="title">
+        <div class="heading">
+        <h1 style="color:#4b2b9c;">Shilla Stay Hotel</h1>
+        <h1 style="color:#4b2b9c;">$1000-$5000</h1><br><br>
+        <button type="submit" style="padding:10px;background-color:rgb(101, 231, 45);"><a href="D:\Academics\sem 2\UID Lab implementation\Background images\paymentform1.html"> Proceed with payment</a></button>
+      </div>
+  
+      <div class="heading">
+        <h1 style="color:#4b2b9c;">Koreana Hotel</h1>
+        <h1 style="color:#4b2b9c;">$6000-$10000</h1><br><br>
+        <button type="submit" style="padding:10px;background-color:rgb(101, 231, 45);"><a href="D:\Academics\sem 2\UID Lab implementation\Background images\paymentform2.html"> Proceed with payment</a></button>
+      </div>
+      <div class="heading">
+        <h1 style="color:#4b2b9c;">Arirang Hill Hotel</h1>
+        <h1 style="color:#4b2b9c;">$11000-$15000</h1><br><br>
+        <button type="submit" style="padding:10px;background-color:rgb(101, 231, 45);"><a href="D:\Academics\sem 2\UID Lab implementation\Background images\paymentform3.html"> Proceed with payment</a></button>
+      </div>
+    </div>
+      
+  
+  
+  </body>
+</html>

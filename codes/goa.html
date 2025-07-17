@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+        <style>
+
+            .{
+                margin:0px;
+                padding:0px;
+                font-family: sans-serif;
+            }
+
+            body{
+                display:flex;
+                justify-content: center;
+                height:100vh;
+                align-items: center;
+            }
+            .container{
+                display:flex;
+            }
+            .card{
+                height:250px;
+                margin:50px;
+                box-shadow: 5px 5px 20px black;
+                overflow: hidden;
+            }
+            img{
+                height:250px;
+                width:350px;
+                border-radius:3px ;
+             
+            }
+            .intro{
+                height:90px;
+                width:350px;
+                padding: 6px;
+                box-sizing: border-box;
+                position: absolute;
+                bottom: 240px;
+              
+                color: white;
+                transition: .5s ;
+            }
+            h1{
+                margin:10px;
+                font-size: 40px;
+
+            }
+            p{
+                font-size:20px ;
+                margin: 20px;
+                visibility: hidden;
+                opacity: 0;
+
+            }
+           
+            .card:hover{
+                cursor:pointer
+            }
+            .card:hover .intro{
+                height:300px;
+                bottom:240px;
+                background: black;
+            }
+            .card:hover p{
+                opacity: 1;
+                visibility: visible;
+            }
+            .card:hover img{
+                transform: scale(1.1) rotate(-3deg);
+            }
+            body{
+                background-color: azure;
+            }
+
+
+            
+
+
+
+        </style>
+        <body>
+        <div class="container">
+            <div class="card">
+                <img src="https://jurysoutblog.files.wordpress.com/2015/07/breaking-dawn-dudhsagar-falls-more.jpg?w=1200">
+                <div class="intro">
+                    <h1>Dhudhsagar Falls</h1>
+                    <p>The falls are located in the Bhagwan Mahaveer Sanctuary and Mollem National Park among the Western Ghats.</p>
+                    <form action="D:\Academics\sem 2\UID Lab implementation\Background images\hotelform7.html">
+                        <input type="submit" value="continue with Dhudhsagar Falls">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+           
+            <img src=" https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2022/02/Mayfair-Hideaway-Spa-Resort-North-Goa.jpg?resize=1200%2C702&ssl=1" >
+            <div class="intro">
+            <h1>Baga Beach</h1>
+            <p>Baga offers a wide range of water sports and is one of the most visited beaches in North Goa. Baga derived its name from the 'Baga Creek' which flows into the Arabian Sea. </p>
+            <form action="D:\Academics\sem 2\UID Lab implementation\Background images\hotelform8.html">
+                <input type="submit" value="continue with Baga Beach">
+            </form>
+        </div>
+        </div>
+        <div class="card">
+            <img src="https://www.fabhotels.com/blog/wp-content/uploads/2022/01/Chapora-fort_709883707-600X400.jpg">
+            <div class="intro">
+                <h1>Chapora Fort</h1>
+                <p>The Chapora fort sits on a prominent position which commands views in all directions. It also has steep slopes on all sides.the outline of higher slopes. </p>
+                <form action="D:\Academics\sem 2\UID Lab implementation\Background images\hotelform9.html">
+                    <input type="submit" value="continue with Chapora Fort">
+                </form>
+            </div>
+        </div>
+    </head>
+  </body>
+</html>

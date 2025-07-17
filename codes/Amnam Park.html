@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Slideshow Images</title>
+    <style>
+        .container{
+            display:flex;
+        }
+      .slider {
+        width: 500px;
+        height: 300px;
+        background-color: yellow;
+        margin-left: 0px;
+        margin-right: 50px;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+      
+      
+      }
+      .image-container {
+        width: 1500px;
+        background-color: pink;
+        height: 300px;
+        clear: both;
+        position: relative;
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 2s;
+      }
+      .slide {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+      }
+      #slide-1:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-2:target ~ .image-container {
+        left: -500px;
+      }
+      #slide-3:target ~ .image-container {
+        left: -1000px;
+      }
+      #slide-4:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-5:target ~ .image-container {
+        left: -500px;
+      }
+      #slide-6:target ~ .image-container {
+        left: -1000px;
+      }
+      #slide-7:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-8:target ~ .image-container {
+        left: -500px;
+      }
+      #slide-9:target ~ .image-container {
+        left: -1000px;
+      }
+      .buttons {
+        position: relative;
+        top: -20px;
+      }
+      .buttons a {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50px;
+        background-color: lightgreen;
+      }
+      .title{
+        display:flex;
+       
+      }
+      .heading {
+        width: 500px;
+        height: 300px;
+        margin-left: 0px;
+        margin-right: 50px;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+ 
+      
+      }
+    </style>
+  </head>
+  <body>
+    <br><br><br><br>
+    <div class="container">
+    <div class="slider">
+      <span id="slide-1"></span>
+      <span id="slide-2"></span>
+      <span id="slide-3"></span>
+      <div class="image-container">
+        <img src="https://i.travelapi.com/hotels/82000000/81340000/81337200/81337117/c0fc10ee_z.jpg?impolicy=resizecrop&rw=750&ra=fit" class="slide" width="500" height="300" />
+        <img src="https://www.busanbesthotels.com/data/Pics/700x500/4340/434039/434039595/pic-best-in-city-hotel-busan-4.JPEG" class="slide" width="500" height="300" />
+        <img src="https://images.trvl-media.com/lodging/43000000/42590000/42589900/42589848/202669c5.jpg?impolicy=resizecrop&rw=500&ra=fit" class="slide" width="500" height="300" />
+        
+      </div>
+     
+     
+      <div class="buttons">
+        <a href="#slide-1"></a>
+        <a href="#slide-2"></a>
+        <a href="#slide-3"></a>
+       
+      </div>
+      </div>
+   
+   
+    <div class="slider">
+        <span id="slide-4"></span>
+        <span id="slide-5"></span>
+        <span id="slide-6"></span>
+        <div class="image-container">
+          <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/443110851.jpg?k=68f516ab2a2f7712ca08c92b53629c0848939421a60623a57bfa6373accf1eda&o=&hp=1" class="slide" width="500" height="300" />
+          <img src="https://i.travelapi.com/lodging/53000000/52610000/52603800/52603760/90488491_z.jpg" class="slide" width="500" height="300" />
+          <img src="https://ak-d.tripcdn.com/images/200f1f000001g6yx37AA2_R_550_412_R5.jpg" class="slide" width="500" height="300" />
+        </div>
+       
+        <div class="buttons">
+          <a href="#slide-4"></a>
+          <a href="#slide-5"></a>
+          <a href="#slide-6"></a>
+        </div>
+      </div>
+      <div class="slider">
+        <span id="slide-7"></span>
+        <span id="slide-8"></span>
+        <span id="slide-9"></span>
+        <div class="image-container">
+          <img src="https://media.datahc.com/HI587509470.jpg" class="slide" width="500" height="300" />
+          <img src="https://images.trvl-media.com/lodging/31000000/30540000/30531200/30531188/9829c8cf.jpg?impolicy=resizecrop&rw=500&ra=fit" class="slide" width="500" height="300" />
+          <img src="https://www.momondo.com/himg/de/72/eb/revato-3308378-13256992-827677.jpg" class="slide" width="500" height="300" />
+          
+        </div>
+       
+       
+        <div class="buttons">
+          <a href="#slide-7"></a>
+          <a href="#slide-8"></a>
+          <a href="#slide-9"></a>
+         
+        </div>
+        </div>
+     
+    </div>
+    <div class="title">
+        <div class="heading">
+        <h1 style="color:#4b2b9c;">GnB Hotel</h1>
+        <h1 style="color:#4b2b9c;">$1000-$5000</h1><br><br>
+        <button type="submit" style="padding:10px;background-color:rgb(101, 231, 45);"><a href="D:\Academics\sem 2\UID Lab implementation\Background images\paymentform1.html"> Proceed with payment</a></button>
+      </div>
+  
+      <div class="heading">
+        <h1 style="color:#4b2b9c;">Grab The Ocean Songdo</h1>
+        <h1 style="color:#4b2b9c;">$6000-$10000</h1><br><br>
+        <button type="submit" style="padding:10px;background-color:rgb(101, 231, 45);"><a href="D:\Academics\sem 2\UID Lab implementation\Background images\paymentform2.html"> Proceed with payment</a></button>
+      </div>
+      <div class="heading">
+        <h1 style="color:#4b2b9c;">Hotel 2 Heaven</h1>
+        <h1 style="color:#4b2b9c;">$11000-$15000</h1><br><br>
+        <button type="submit" style="padding:10px;background-color:rgb(101, 231, 45);"><a href="D:\Academics\sem 2\UID Lab implementation\Background images\paymentform3.html"> Proceed with payment</a></button>
+      </div>
+    </div>
+      
+  
+  
+  </body>
+</html>

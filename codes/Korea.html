@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+          *{
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+          } 
+          body
+          {
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center; 
+          }
+          .container
+          {
+            display: flex;
+          }
+         .card
+         {
+          height: 250px;
+          margin: 12px;
+          box-shadow: 5px 5px 20px black ;
+          overflow: hidden;
+
+         }
+          img
+          {
+            height: 250px;
+            width: 350px;
+            border-radius: 3px;
+          }
+          .intro
+          {
+            height: 70px;
+            width: 350px;
+            padding: 6px;
+            box-sizing: border-box;
+            position: absolute;
+            bottom: 350px;
+            background: rbg(27, 27, 27, .5); 
+            color: white;
+            transition: .5s;
+          }
+          h1
+          {
+             margin: 10px;
+             font-size: 40px;
+          }
+          p
+          {
+            font-size:  20px;
+            margin: 20px;
+            visibility: hidden;
+            opacity: 0;
+          }  
+          .card:hover
+          {
+            cursor: pointer;
+
+          }
+          .card:hover .intro
+          {
+            height: 300px;
+            bottom: 240px;
+            background: black;
+          }
+          .card:hover p
+          {
+             opacity: 1;
+             visibility: visible;
+          }
+          .card:hover img
+          {
+            transform: scale(1.1) rotate(-3deg);
+
+          }
+          body{
+            background-color: azure;
+          }
+          </style>
+
+          
+           
+    </head>
+    <body>
+        <div class="container">
+            <div class="card ">
+                <img src="https://media.timeout.com/images/105240244/750/422/image.jpg" alt="seoul">
+                <div class="intro">
+                    <h1>Seoul</h1>
+                    <p>Seoul is the world's 16th largest city, and forms the heart of the Seoul Capital Area, which includes the surrounding Incheon metropolis and Gyeonggi province</p>
+                    <form action="D:\Academics\sem 2\UID Lab implementation\Background images\seoul.html">
+                        
+                        <input type="submit" value="continue with Seoul">
+                      </form> 
+                </div>
+            </div>
+                <div class="card">
+                    <img src="https://a.cdn-hotels.com/gdcs/production144/d559/b4aff5a2-1af3-454f-8cce-97ba6ec44b34.jpg" alt="busan">
+                    <div class="intro">
+                        <h1>Busan</h1>
+                        <p>Busan is known as the “Miami of South Korea”. Thousands of tourists travel to this city to enjoy its wonderful waters and relax with all the nature that surrounds the landscape</p>
+                        <form action="D:\Academics\sem 2\UID Lab implementation\Background images\busan.html">
+                        
+                            <input type="submit" value="continue with Busan">
+                          </form> 
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://youimg1.tripcdn.com/target/350q16000001074utE976.png?proc=source%2Ftrip" alt="Daegu">
+                    <div class="intro">
+                        <h1>Daegu</h1>
+                        <p>Daegu is one of the largest cities in South Korea, and coupled with its rich and ancient culture, it has a number of scenic attractions and beautiful mountains</p>
+                        <form action="D:\Academics\sem 2\UID Lab implementation\Background images\daegu.html">
+                        
+                            <input type="submit" value="continue with Daegu">
+                          </form> 
+
+                    </div>
+                </div>
+               
+            </div>
+         </body>   
+</html>

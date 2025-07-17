@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Slideshow Images</title>
+    <style>
+        .container{
+            display:flex;
+        }
+      .slider {
+        width: 500px;
+        height: 300px;
+        background-color: yellow;
+        margin-left: 0px;
+        margin-right: 50px;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+      
+      
+      }
+      .image-container {
+        width: 1500px;
+        background-color: pink;
+        height: 300px;
+        clear: both;
+        position: relative;
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 2s;
+      }
+      .slide {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+      }
+      #slide-1:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-2:target ~ .image-container {
+        left: -500px;
+      }
+      #slide-3:target ~ .image-container {
+        left: -1000px;
+      }
+      #slide-4:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-5:target ~ .image-container {
+        left: -500px;
+      }
+      #slide-6:target ~ .image-container {
+        left: -1000px;
+      }
+      #slide-7:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-8:target ~ .image-container {
+        left: -500px;
+      }
+      #slide-9:target ~ .image-container {
+        left: -1000px;
+      }
+      .buttons {
+        position: relative;
+        top: -20px;
+      }
+      .buttons a {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50px;
+        background-color: lightgreen;
+      }
+      .title{
+        display:flex;
+       
+      }
+      .heading {
+        width: 500px;
+        height: 300px;
+        margin-left: 0px;
+        margin-right: 50px;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+      
+      
+      }
+    </style>
+  </head>
+  <body>
+    <br><br><br><br>
+    <div class="container">
+    <div class="slider">
+      <span id="slide-1"></span>
+      <span id="slide-2"></span>
+      <span id="slide-3"></span>
+      <div class="image-container">
+        <img src="https://www.designhotels.com/media/d4bbcgo0/new-hotel-architecture-building-sundown-atmosphere-k-02-x2-1-jpg.jpg?format=webp&quality=80&rnd=133053906228100000" class="slide" width="500" height="300" />
+        <img src="https://i0.wp.com/thehoteljournal.com/wp-content/uploads/2022/09/best-boutique-hotels-crete-numo-ierepetra.jpg?resize=798%2C572&ssl=1" class="slide" width="500" height="300" />
+        <img src="https://www.hotelswebgr.com/wp-content/uploads/2023/03/2_summer-times-studios.jpg" class="slide" width="500" height="300" />
+        
+      </div>
+     
+     
+      <div class="buttons">
+        <a href="#slide-1"></a>
+        <a href="#slide-2"></a>
+        <a href="#slide-3"></a>
+       
+      </div>
+      </div>
+   
+   
+    <div class="slider">
+        <span id="slide-4"></span>
+        <span id="slide-5"></span>
+        <span id="slide-6"></span>
+        <div class="image-container">
+          <img src="https://cf.bstatic.com/xdata/images/hotel/max500/772719.jpg?k=d51325e077ecd48aa6b2ff5762149fd6651a6cda3c2307113d9dc59a5e315c28&o=&hp=1" class="slide" width="500" height="300" />
+          <img src="https://media.timeout.com/images/105231179/750/562/image.jpg" class="slide" width="500" height="300" />
+          <img src="https://kayakapi-premium-caves-cappadocia.centralanatoliahotels.com/data/Photos/OriginalPhoto/12750/1275076/1275076492/kayakapi-premium-caves-cappadocia-hotel-urgup-photo-18.JPEG" class="slide" width="500" height="300" />
+        </div>
+       
+        <div class="buttons">
+          <a href="#slide-4"></a>
+          <a href="#slide-5"></a>
+          <a href="#slide-6"></a>
+        </div>
+      </div>
+      <div class="slider">
+        <span id="slide-7"></span>
+        <span id="slide-8"></span>
+        <span id="slide-9"></span>
+        <div class="image-container">
+          <img src="https://s1.it.atcdn.net/wp-content/uploads/2014/03/Poseidonion-Exterior.jpg" class="slide" width="500" height="300" />
+          <img src="https://www.telegraph.co.uk/content/dam/Travel/Destinations/Europe/Greece/Rhodes/lindos-blu-rhodes-greece-prod.jpg" class="slide" width="500" height="300" />
+          <img src="https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_600,q_auto,w_600//itemimages/52/07/5207904_v1.jpeg" class="slide" width="500" height="300" />
+          
+        </div>
+       
+       
+        <div class="buttons">
+          <a href="#slide-7"></a>
+          <a href="#slide-8"></a>
+          <a href="#slide-9"></a>
+         
+        </div>
+        </div>
+     
+    </div>
+    <div class="title">
+        <div class="heading">
+        <h1 style="color:#4b2b9c;">Hotel Akshatha</h1>
+        <h1 style="color:#4b2b9c;">$1000-$5000</h1><br><br>
+        <button type="submit" style="padding:10px;background-color:rgb(101, 231, 45);"><a href="D:\Academics\sem 2\UID Lab implementation\Background images\paymentform1.html"> Proceed with payment</a></button>
+      </div>
+  
+      <div class="heading">
+        <h1 style="color:#4b2b9c;">Sarovar Hotels</h1>
+        <h1 style="color:#4b2b9c;">$6000-$10000</h1><br><br>
+        <button type="submit" style="padding:10px;background-color:rgb(101, 231, 45);"><a href="D:\Academics\sem 2\UID Lab implementation\Background images\paymentform2.html"> Proceed with payment</a></button>
+      </div>
+      <div class="heading">
+        <h1 style="color:#4b2b9c;">Aigialos</h1>
+        <h1 style="color:#4b2b9c;">$11000-$15000</h1><br><br>
+        <button type="submit" style="padding:10px;background-color:rgb(101, 231, 45);"><a href="D:\Academics\sem 2\UID Lab implementation\Background images\paymentform3.html"> Proceed with payment</a></button>
+      </div>
+    </div>
+      
+  
+  
+  </body>
+</html>

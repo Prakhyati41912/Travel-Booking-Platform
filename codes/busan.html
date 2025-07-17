@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+          *{
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+          } 
+          body
+          {
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center; 
+          }
+          .container
+          {
+            display: flex;
+          }
+         .card
+         {
+          height: 250px;
+          margin: 50px;
+          box-shadow: 5px 5px 20px black ;
+          overflow: hidden;
+
+         }
+          img
+          {
+            height: 250px;
+            width: 350px;
+            border-radius: 3px;
+          }
+          .intro
+          {
+            height: 70px;
+            width: 350px;
+            padding: 6px;
+            box-sizing: border-box;
+            position: absolute;
+            bottom: 350px;
+            background: rbg(27, 27, 27, .5); 
+            color: white;
+            transition: .5s;
+          }
+          h1
+          {
+             margin: 10px;
+             font-size: 40px;
+          }
+          p
+          {
+            font-size:  20px;
+            margin: 20px;
+            visibility: hidden;
+            opacity: 0;
+          }  
+          .card:hover
+          {
+            cursor: pointer;
+
+          }
+          .card:hover .intro
+          {
+            height: 300px;
+            bottom: 240px;
+            background: black;
+          }
+          .card:hover p
+          {
+             opacity: 1;
+             visibility: visible;
+          }
+          .card:hover img
+          {
+            transform: scale(1.1) rotate(-3deg);
+
+          }
+          body{
+            background-color: azure;
+          }
+          </style>
+
+          
+           
+    </head>
+    <body>
+        <div class="container">
+            <div class="card ">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/3b/1f/ba/20190708-190714-largejpg.jpg?w=800&h=600&s=1" alt="Gwangalli beach">
+                <div class="intro">
+                    <h1>Gwangalli beach</h1>
+                    <p>The huge bridge, the first double-decker suspension bridge in the world dominates it completely</p>
+                    <form action="D:\Academics\sem 2\UID Lab implementation\Background images\hotelform13.html">
+                        
+                        <input type="submit" value="continue with Gwangalli beach">
+                      </form> 
+                </div>
+            </div>
+                <div class="card">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/3e/d7/46/dsc-0313-largejpg.jpg?w=1000&h=800&s=1" alt="Biff square">
+                    <div class="intro">
+                        <h1>Biff square</h1>
+                        <p>BIFF stands for Busan International Film Festival. It's a popular area in downtown Busan </p>
+                        <form action="D:\Academics\sem 2\UID Lab implementation\Background images\hotelform14.html">
+                        
+                            <input type="submit" value="continue with Biff square">
+                          </form> 
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/ea/ad/a6/caption.jpg?w=1000&h=-1&s=1" alt="Amnam park">
+                    <div class="intro">
+                        <h1>Amnam park</h1>
+                        <p>Take the cable car over and the Coastal hike and down by the water</p>
+                        <form action="D:\Academics\sem 2\UID Lab implementation\Background images\hotelform15.html">
+                        
+                            <input type="submit" value="continue with Amnam park">
+                          </form> 
+
+                    </div>
+                </div>
+               
+            </div>
+         </body>   
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Slideshow Images</title>
+    <style>
+        .container{
+            display:flex;
+        }
+      .slider {
+        width: 500px;
+        height: 300px;
+        background-color: yellow;
+        margin-left: 0px;
+        margin-right: 50px;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+      
+      
+      }
+      .image-container {
+        width: 1500px;
+        background-color: pink;
+        height: 300px;
+        clear: both;
+        position: relative;
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 2s;
+      }
+      .slide {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+      }
+      #slide-1:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-2:target ~ .image-container {
+        left: -500px;
+      }
+      #slide-3:target ~ .image-container {
+        left: -1000px;
+      }
+      #slide-4:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-5:target ~ .image-container {
+        left: -500px;
+      }
+      #slide-6:target ~ .image-container {
+        left: -1000px;
+      }
+      #slide-7:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-8:target ~ .image-container {
+        left: -500px;
+      }
+      #slide-9:target ~ .image-container {
+        left: -1000px;
+      }
+      .buttons {
+        position: relative;
+        top: -20px;
+      }
+      .buttons a {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50px;
+        background-color: lightgreen;
+      }
+      .title{
+        display:flex;
+       
+      }
+      .heading {
+        width: 500px;
+        height: 300px;
+        margin-left: 0px;
+        margin-right: 50px;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+      
+      
+      }
+    </style>
+  </head>
+  <body>
+    <br><br><br><br>
+    <div class="container">
+    <div class="slider">
+      <span id="slide-1"></span>
+      <span id="slide-2"></span>
+      <span id="slide-3"></span>
+      <div class="image-container">
+        <img src="https://lh3.googleusercontent.com/proxy/ON0VW055M4ncFx506A0h8XIvF-KTk-aPf-Pgw_YspmU8xlYQC6M8PCjMhynfw1frQ8O-VJeiBrp9YsXA9w8gokYNqzdOaTOMWUzKzyBhiOtcToSJCsWABqaoM4iZk-d7GWGJ9X8TXrmH6MS5OJLWYVzFL8-bg3Y=w624-h720-n-k" class="slide" width="500" height="300" />
+        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/370077619.jpg?k=e412f7b15c7494547b0ffc589b9332b71f6d9df9226182591fcdae4363df42fa&o=&hp=1" class="slide" width="500" height="300" />
+        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/249342950.jpg?k=51b83663346b686585da172a085880f3be2326842534ce754562211e44d7335d&o=&hp=1" class="slide" width="500" height="300" />
+        
+      </div>
+     
+     
+      <div class="buttons">
+        <a href="#slide-1"></a>
+        <a href="#slide-2"></a>
+        <a href="#slide-3"></a>
+       
+      </div>
+      </div>
+   
+   
+    <div class="slider">
+        <span id="slide-4"></span>
+        <span id="slide-5"></span>
+        <span id="slide-6"></span>
+        <div class="image-container">
+          <img src="https://q-xx.bstatic.com/xdata/images/hotel/840x460/366597898.jpg?k=2d33ffa801a7c44cc0368f23105342c7d3f69b2af677ac44ae79a810aa6d428f&o=" class="slide" width="500" height="300" />
+          <img src="https://media-cdn.tripadvisor.com/media/photo-m/1280/23/5b/0a/fe/mikri-vigla-hotel-deluxe.jpg" class="slide" width="500" height="300" />
+          <img src="https://house-on-the-rock-i-hotel.visit-naxos.com/data/Photos/OriginalPhoto/9254/925412/925412440/house-on-the-rock-i-hotel-mikri-vigla-photo-1.JPEG" class="slide" width="500" height="300" />
+        </div>
+       
+        <div class="buttons">
+          <a href="#slide-4"></a>
+          <a href="#slide-5"></a>
+          <a href="#slide-6"></a>
+        </div>
+      </div>
+      <div class="slider">
+        <span id="slide-7"></span>
+        <span id="slide-8"></span>
+        <span id="slide-9"></span>
+        <div class="image-container">
+          <img src="https://media-cdn.tripadvisor.com/media/photo-s/0c/f6/e5/59/hotel-orkos-beach.jpg" class="slide" width="500" height="300" />
+          <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/205633245.jpg?k=a2c4d199ac90290680b6bf241848adb795210ae6393cf86e3a3f5782d72a2194&o=&hp=1" class="slide" width="500" height="300" />
+          <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/285992920.jpg?k=18e3e98c30d2595f163e8c1b3ea0a732e8acedac008a97ac3444f16f8f5f4c2e&o=&hp=1" class="slide" width="500" height="300" />
+          
+        </div>
+       
+       
+        <div class="buttons">
+          <a href="#slide-7"></a>
+          <a href="#slide-8"></a>
+          <a href="#slide-9"></a>
+         
+        </div>
+        </div>
+     
+    </div>
+    <div class="title">
+        <div class="heading">
+        <h1 style="color:#4b2b9c;">Hotel Oasis</h1>
+        <h1 style="color:#4b2b9c;">$1000-$5000</h1><br><br>
+        <button type="submit" style="padding:10px;background-color:rgb(101, 231, 45);"><a href="D:\Academics\sem 2\UID Lab implementation\Background images\paymentform1.html"> Proceed with payment</a></button>
+      </div>
+  
+      <div class="heading">
+        <h1 style="color:#4b2b9c;">Nissaki Hotel</h1>
+        <h1 style="color:#4b2b9c;">$6000-$10000</h1><br><br>
+        <button type="submit" style="padding:10px;background-color:rgb(101, 231, 45);"><a href="D:\Academics\sem 2\UID Lab implementation\Background images\paymentform2.html"> Proceed with payment</a></button>
+      </div>
+      <div class="heading">
+        <h1 style="color:#4b2b9c;">Orkos Beach Hotel</h1>
+        <h1 style="color:#4b2b9c;">$11000-$15000</h1><br><br>
+        <button type="submit" style="padding:10px;background-color:rgb(101, 231, 45);"><a href="D:\Academics\sem 2\UID Lab implementation\Background images\paymentform3.html"> Proceed with payment</a></button>
+      </div>
+    </div>
+      
+  
+  
+  </body>
+</html>

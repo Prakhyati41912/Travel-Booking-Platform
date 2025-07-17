@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+    <head>
+        
+    </head> <style>
+        .{
+            margin:0px;
+            padding:0px;
+            font-family: sans-serif;
+        }
+        body{
+            display:flex;
+            justify-content: center;
+            height:100vh;
+            align-items: center;
+        }
+        .container{
+            display:flex;
+        }
+        .card{
+            height:250px;
+            margin:50px;
+            box-shadow: 5px 5px 20px black;
+            overflow: hidden;
+        }
+        img{
+            height:250px;
+            width:350px;
+            border-radius:3px ;
+         
+        }
+        .intro{
+            height:70px;
+            width:350px;
+            padding: 6px;
+            box-sizing: border-box;
+            position: absolute;
+            bottom: 350px;
+          
+            color: white;
+            transition: .5s ;
+        }
+        h1{
+            margin:10px;
+            font-size: 40px;
+
+        }
+        p{
+            font-size:20px ;
+            margin: 20px;
+            visibility: hidden;
+            opacity: 0;
+
+        }
+       
+        .card:hover{
+            cursor:pointer
+        }
+        .card:hover .intro{
+            height:300px;
+            bottom:240px;
+            background: black;
+        }
+        .card:hover p{
+            opacity: 1;
+            visibility: visible;
+        }
+        .card:hover img{
+            transform: scale(1.1) rotate(-3deg);
+        }
+        body{
+            background-color: azure;
+        }
+
+    </style>
+        <body>
+        <div class="container">
+            <div class="card">
+                <img src="https://www.greece-is.com/wp-content/uploads/2019/07/Acropolis-Museum_3K4A0380_PhotographedByGiorgosVitsaropoulos.jpg">
+                <div class="intro">
+                    <h1>Acropolis Museum</h1>
+                    <p>The Acropolis Museum is consistently rated as one of the best museums. </p>
+                    <form action="D:\Academics\sem 2\UID Lab implementation\Background images\hotelform28.html">
+                        <input type="submit" value="continue with Acropolis Museum">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+           
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGvHBrQto_osk9I6QEoNcpYvZNX1ccBXFy4A&usqp=CAU" >
+            <div class="intro">
+            <h1>Athens National Garden</h1>
+            <p>The Royal Garden was commissioned by Queen Amalia in 1838 and completed by 1840. </p>
+            <form action="D:\Academics\sem 2\UID Lab implementation\Background images\hotelform28.html">
+                <input type="submit" value="continue with Athens National Garden">
+            </form>
+        </div>
+        </div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2022/07/08/14/10/odeon-of-herodes-atticus-7309330_1280.jpg">
+            <div class="intro">
+                <h1>Odeon of Herodes Atticus</h1>
+                <p>The Odeon of Herodes Atticus also called Herodeion or Herodion; is a stone Roman theatre.</p>
+                <form action="D:\Academics\sem 2\UID Lab implementation\Background images\hotelform29.html">
+                    <input type="submit" value="continue with Odeon of Herodes Atticus">
+                </form>
+            </div>
+        </div>
+    </head>
+</body>
+</html>

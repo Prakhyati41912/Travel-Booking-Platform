@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+    <head>
+        
+    </head> 
+    <style>
+        . {
+            margin:0px;
+            padding:0px;
+            font-family: sans-serif;
+        }
+        body{
+            display:flex;
+            justify-content: center;
+            height:100vh;
+            align-items: center;
+        }
+        .container{
+            display:flex;
+        }
+        .card{
+            height:250px;
+            margin:50px;
+            box-shadow: 5px 5px 20px black;
+            overflow: hidden;
+        }
+        img{
+            height:250px;
+            width:350px;
+            border-radius:3px ;
+         
+        }
+        .intro{
+            height:70px;
+            width:350px;
+            padding: 6px;
+            box-sizing: border-box;
+            position: absolute;
+            bottom: 350px;
+          
+            color: white;
+            transition: .5s ;
+        }
+        h1{
+            margin:10px;
+            font-size: 40px;
+
+        }
+        p{
+            font-size:20px ;
+            margin: 20px;
+            visibility: hidden;
+            opacity: 0;
+
+        }
+       
+        .card:hover{
+            cursor:pointer
+        }
+        .card:hover .intro{
+            height:300px;
+            bottom:240px;
+            background: black;
+        }
+        .card:hover p{
+            opacity: 1;
+            visibility: visible;
+        }
+        .card:hover img{
+            transform: scale(1.1) rotate(-3deg);
+        }
+        body{
+            background-color: azure;
+        }
+
+    </style>
+        <body>
+        <div class="container">
+            <div class="card">
+                <img src="https://francetoday.com/wp-content/uploads/2022/03/crtb-ac5569_LE-GAL-Yannick.jpg">
+                <div class="intro">
+                    <h1>Cotes-d'Armor</h1>
+                    <p>Côtes-d'Armor is part of the current administrative region of Brittany and is bounded by the departments of Ille-et-Vilaine to the east.</p>
+                    <form action="D:\Academics\sem 2\UID Lab implementation\Background images\hotelform25.html">
+                        <input type="submit" value="continue with Cotes-d'Armor">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+           
+            <img src="https://www.benodet.fr/wp-content/uploads/sites/2/wpetourisme/Bassin-requins-Copyright-Simon-Cohen-edited-edited.jpg" >
+            <div class="intro">
+            <h1>Oceanopolis</h1>
+            <p>Océanopolis Ocean Discovery Park.
+                Since 1990, Océanopolis, owned by the City of Brest aim, has recounted the natural history of the oceans.</p>
+            <form action="D:\Academics\sem 2\UID Lab implementation\Background images\hotelform26.html">
+                <input type="submit" value="continue Oceanopolis">
+            </form>
+        </div>
+        </div>
+        <div class="card">
+            <img src="https://www.bretagne-vitre.com/wp-content/uploads/2022/10/crtb-ae04667_PORIEL-Thibault-compressed.jpg">
+            <div class="intro">
+                <h1>Vitre Castle</h1>
+                <p>The Château de Vitré is a medieval castle in the town of Vitré, in the Ille-et-Vilaine département of France.</p>
+                <form action="D:\Academics\sem 2\UID Lab implementation\Background images\hotelform27.html">
+                    <input type="submit" value="continue with vitre castle">
+                </form>
+            </div>
+        </div>
+    </head>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+          *{
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+          } 
+          body
+          {
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center; 
+          }
+          .container
+          {
+            display: flex;
+          }
+         .card
+         {
+          height: 250px;
+          margin: 50px;
+          box-shadow: 5px 5px 20px black ;
+          overflow: hidden;
+
+         }
+          img
+          {
+            height: 250px;
+            width: 350px;
+            border-radius: 3px;
+          }
+          .intro
+          {
+            height: 70px;
+            width: 350px;
+            padding: 6px;
+            box-sizing: border-box;
+            position: absolute;
+            bottom: 350px;
+            background: rbg(27, 27, 27, .5); 
+            color: white;
+            transition: .5s;
+          }
+          h1
+          {
+             margin: 10px;
+             font-size: 40px;
+          }
+          p
+          {
+            font-size:  20px;
+            margin: 20px;
+            visibility: hidden;
+            opacity: 0;
+          }  
+          .card:hover
+          {
+            cursor: pointer;
+
+          }
+          .card:hover .intro
+          {
+            height: 300px;
+            bottom: 240px;
+            background: black
+          }
+          .card:hover p
+          {
+             opacity: 1;
+             visibility: visible;
+          }
+          .card:hover img
+          {
+            transform: scale(1.1) rotate(-3deg);
+
+          }
+          body{
+            background-color: azure;
+          }
+          </style>
+
+          
+           
+    </head>
+    <body>
+        <div class="container">
+            <div class="card ">
+                <img src="https://lp-cms-production.imgix.net/news/2019/05/eiffeltower2.jpg?auto=format&w=1440&h=810&fit=crop&q=75" alt="Eiffel Tower">
+                <div class="intro">
+                    <h1> Eiffel Tower</h1>
+                    <p>People flock to the Eiffel Tower to take pictures in front of its classic facade, to enjoy the amazing views from the observation decks inside, and to see its dazzling nightly light shows</p>
+                    <form action="D:\Academics\sem 2\UID Lab implementation\Background images\hotelform19.html">
+                        
+                        <input type="submit" value="continue with Eiffel Tower">
+                      </form> 
+                </div>
+            </div>
+                <div class="card">
+                    <img src="https://guidetourism.net/wp-content/uploads/2023/02/0Disneyland-Park-in-Paris.jpg" alt=" Disney land ">
+                    <div class="intro">
+                        <h1>Disney land</h1>
+                        <p>it is the only one located on an island, accessible by underwater tunnels. It is also the largest attraction at the resort in Paris.it provided Europe with a model of the ideal royal residence.</p>
+                        <form action="D:\Academics\sem 2\UID Lab implementation\Background images\hotelform20.html">
+                        
+                            <input type="submit" value="continue with Disney land">
+                          </form> 
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://i0.wp.com/secretsofparis.com/wp-content/uploads/2020/07/V02_GATE-e1595518756327.jpg?resize=990%2C491&ssl=1" alt=" palace of versailles ">
+                    <div class="intro">
+                        <h1>palace of versailles</h1>
+                        <p>The Palace of Versailles was the principal residence of the French kings from the time of Louis XIV to Louis XVI</p>
+                        <form action="D:\Academics\sem 2\UID Lab implementation\Background images\hotelform21.html">
+                        
+                            <input type="submit" value="continue with palace of versailles">
+                          </form> 
+
+                    </div>
+                </div>
+               
+            </div>
+         </body>   
+</html>
