@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        ::-webkit-scrollbar{
+            display:none;
+        }
+        
+     body{
+        background:url('register.jpg');
+     background-repeat:no-repeat;
+     background-attachment: fixed;
+     background-size: cover;
+     }
+    </style>
+
+</head>
+<br><br><br><br><br>
+<center>
+<b><h1>REGISTER</h1></b>
+</center>
+<body>
+   <center>
+  <form action="main webpage.html" name="myForm" onsubmit="return validateForm()">
+    <label>First Name  <input type="text" id="firstname" /></label><br>
+   <br><br>
+
+  
+
+    <label>Last Name  <input type="lastname" id="lastname"/></label><br>
+   <br><br>
+
+    <label>Email <input type="email" id="email" /></label><br>
+    <br><br>
+    
+    <label>password  <input type="password" id="password"/></label><br>
+   <br><br>
+
+    <label >Mobile Number: <input type="text" id="mobile" /></label><br>
+    <br><br>
+
+    <button type="submit" value="submit">Submit</button></a>
+  </form>
+   </center>
+</body>
+</html>
+   <script>
+  
+
+    function validateForm() {
+
+
+        var firstname = document.forms["myForm"]["firstname"].value;
+        var lastname = document.forms["myForm"]["lastname"].value;
+        var email = document.forms["myForm"]["email"].value;
+        var password = document.forms["myForm"]["password"].value;
+        var mobile = document.forms["myForm"]["mobile"].value;
+    
+       
+  if (firstname == ""|| lastname == ""|| email == ""|| password == ""||mobile == "") {
+    alert("Fields must be filled out");
+    return false;
+  }
+  if(!mobile.value==10)
+  {
+    alert("enter valid mobile number");
+    return false;
+  }
+  
+    }
+    </script>
+
+

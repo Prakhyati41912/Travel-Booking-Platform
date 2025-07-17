@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+    <head>
+        
+    </head> <style>
+        .{
+            margin:0px;
+            padding:0px;
+            font-family: sans-serif;
+        }
+        body{
+            display:flex;
+            justify-content: center;
+            height:100vh;
+            align-items: center;
+        }
+        .container{
+            display:flex;
+        }
+        .card{
+            height:250px;
+            margin:50px;
+            box-shadow: 5px 5px 20px black;
+            overflow: hidden;
+        }
+        img{
+            height:250px;
+            width:350px;
+            border-radius:3px ;
+         
+        }
+        .intro{
+            height:70px;
+            width:350px;
+            padding: 6px;
+            box-sizing: border-box;
+            position: absolute;
+            bottom: 350px;
+          
+            color: white;
+            transition: .5s ;
+        }
+        h1{
+            margin:10px;
+            font-size: 40px;
+
+        }
+        p{
+            font-size:20px ;
+            margin: 20px;
+            visibility: hidden;
+            opacity: 0;
+
+        }
+       
+        .card:hover{
+            cursor:pointer
+        }
+        .card:hover .intro{
+            height:300px;
+            bottom:240px;
+            background: black;
+        }
+        .card:hover p{
+            opacity: 1;
+            visibility: visible;
+        }
+        .card:hover img{
+            transform: scale(1.1) rotate(-3deg);
+        }
+        body{
+            background-color: azure;
+        }
+
+    </style>
+        <body>
+        <div class="container">
+            <div class="card">
+                <img src="https://koreankulture.com/wp-content/uploads/Gyeongbokgung-Palace-in-Seoul-South-Korea.jpg">
+                <div class="intro">
+                    <h1>Seoul Tower</h1>
+                    <p>The N Seoul Tower (Korean: N 서울타워), South Korea's first general radio wave tower, providing TV and radio broadcasting in Seoul. .</p>
+                    <form action="D:\Academics\sem 2\UID Lab implementation\Background images\hotelform10.html">
+                        <input type="submit" value="continue with Seoul Tower">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+           
+            <img src="https://thumbs.dreamstime.com/b/bukhansan-national-park-sunrise-seoul-south-korea-clouds-fog-120132514.jpg" >
+            <div class="intro">
+            <h1>Bukhansan National Park</h1>
+            <p>The Bukhansan National Park in Seoul and Gyeonggi was established on 2 April 1983</p>
+            <form action="D:\Academics\sem 2\UID Lab implementation\Background images\hotelform11.html">
+                <input type="submit" value="continue Bukhansan National Park">
+            </form>
+        </div>
+        </div>
+        <div class="card">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/41/70/b6/gate-gwanghwamun.jpg?w=1200&h=-1&s=1">
+            <div class="intro">
+                <h1>Gwanghwamun Square</h1>
+                <p>Gwanghwamun Square is a public square on Sejongno, Jongno-gu, Seoul, South Korea</p>
+                <form action="D:\Academics\sem 2\UID Lab implementation\Background images\hotelform12.html">
+                    <input type="submit" value="continue Gwanghwamun Square">
+                </form>
+            </div>
+        </div>
+    </head>
+   </body>
+</html>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        ::-webkit-scrollbar{
+            display:none;
+        }
+        
+       .guruji{
+       text-align: center;
+       background-image:url('https://cdn.pixabay.com/photo/2019/09/18/07/09/meadow-4485609_1280.jpg');
+       background-repeat: no-repeat;
+       background-position: fixed;
+       background-size: cover;
+       height:750px;
+    }
+    </style>
+  <title>Payment</title>
+  <div class="guruji">
+    
+  <script>
+    function calculatePrice() {
+      var roomType = document.getElementById("roomType").value;
+      var numRooms = document.getElementById("numRooms").value;
+      var price = 0;
+
+      if (roomType === "ac") {
+        price = 2000 * numRooms;
+      } else if (roomType === "general") {
+        price = 1000 * numRooms;
+      } else if (roomType === "suite") {
+        price = 5000 * numRooms;
+      } else if (roomType === "family") {
+        price = 3500 * numRooms;
+      }
+
+      document.getElementById("price").value = price;
+    }
+
+    function validateForm() {
+      var name = document.getElementById("name").value;
+      var roomType = document.getElementById("roomType").value;
+      var email = document.getElementById("email").value;
+      var mobile = document.getElementById("mobile").value;
+      var cardHolderName = document.getElementById("cardHolderName").value;
+      var cardNumber = document.getElementById("cardNumber").value;
+      var cvv = document.getElementById("cvv").value;
+
+      var namePattern = /^[a-zA-Z]+([a-zA-Z0-9\s]*)$/;
+      var emailPattern = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+      var mobilePattern = /^\d{10}$/;
+      var cardNumberPattern = /^\d{12}$/;
+      var cvvPattern = /^\d{3}$/;
+
+      if (!name.match(namePattern)) {
+        alert("Please enter a valid username");
+        return false;
+      }
+
+      if (roomType === "") {
+        alert("Please select the room type");
+        return false;
+      }
+
+      if (!email.match(emailPattern)) {
+        alert("Please enter a valid email ID (e.g., example@gmail.com)");
+        return false;
+      }
+
+      if (!mobile.match(mobilePattern)) {
+        alert("Please enter a valid mobile number");
+        return false;
+      }
+
+      if (!cardHolderName.match(namePattern)) {
+        alert("Please enter a valid card holder name");
+        return false;
+      }
+
+      if (!cardNumber.match(cardNumberPattern)) {
+        alert("Please enter a valid card number");
+        return false;
+      }
+
+      if (!cvv.match(cvvPattern)) {
+        alert("Please enter a valid CVV number");
+        return false;
+      }
+
+      // Additional validation logic can be added here
+
+      return true;
+    }
+  </script>
+</head>
+<body>
+   
+    
+    <br><br><br><br>
+  <h1>Payment</h1>
+  <form onsubmit="return validateForm()">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name"  required><br><br>
+
+    <label for="roomType">Type of Room:</label><br>
+    <select id="roomType" onchange="calculatePrice()" required>
+      <option value="">Select Room Type</option>
+      <option value="ac">AC</option>
+      <option value="general">General</option>
+      <option value="suite">Suite</option>
+      <option value="family">Family</option>
+    </select><br><br>
+
+    <label for="numRooms">Number of Rooms:</label><br>
+    <input type="number" id="numRooms" min="1" value="1" onchange="calculatePrice()" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" required><br><br>
+
+    <label for="mobile">Mobile Number:</label><br>
+    <input type="text" id="mobile" required><br><br>
+
+    <label for="cardHolderName">Card Holder Name:</label><br>
+    <input type="text" id="cardHolderName" required><br><br>
+
+    <label for="cardNumber">Card Number:</label><br>
+    <input type="text" id="cardNumber" required><br><br>
+
+    <label for="cvv">CVV:</label><br>
+    <input type="text" id="cvv" required><br><br>
+
+    <label for="price">Price:</label><br>
+    <input type="text" id="price" readonly><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+  </div>
+
+
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+    <style>
+        ::-webkit-scrollbar{
+            display:none;
+        }
+        
+       .guruji{
+       text-align: center;
+       background-image:url('https://cdn.pixabay.com/photo/2019/09/18/07/09/meadow-4485609_1280.jpg');
+       background-repeat: no-repeat;
+       background-position: fixed;
+       background-size: cover;
+       height:750px;
+    }
+    </style>
+  <title>Payment</title>
+  <div class="guruji">
+    
+  <script>
+    function calculatePrice() {
+      var roomType = document.getElementById("roomType").value;
+      var numRooms = document.getElementById("numRooms").value;
+      var price = 0;
+
+      if (roomType === "ac") {
+        price = 2000 * numRooms;
+      } else if (roomType === "general") {
+        price = 1000 * numRooms;
+      } else if (roomType === "suite") {
+        price = 5000 * numRooms;
+      } else if (roomType === "family") {
+        price = 3500 * numRooms;
+      }
+
+      document.getElementById("price").value = price;
+    }
+
+    function validateForm() {
+      var name = document.getElementById("name").value;
+      var roomType = document.getElementById("roomType").value;
+      var email = document.getElementById("email").value;
+      var mobile = document.getElementById("mobile").value;
+      var cardHolderName = document.getElementById("cardHolderName").value;
+      var cardNumber = document.getElementById("cardNumber").value;
+      var cvv = document.getElementById("cvv").value;
+
+      var namePattern = /^[a-zA-Z]+([a-zA-Z0-9\s]*)$/;
+      var emailPattern = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+      var mobilePattern = /^\d{10}$/;
+      var cardNumberPattern = /^\d{12}$/;
+      var cvvPattern = /^\d{3}$/;
+
+      if (!name.match(namePattern)) {
+        alert("Please enter a valid username");
+        return false;
+      }
+
+      if (roomType === "") {
+        alert("Please select the room type");
+        return false;
+      }
+
+      if (!email.match(emailPattern)) {
+        alert("Please enter a valid email ID (e.g., example@gmail.com)");
+        return false;
+      }
+
+      if (!mobile.match(mobilePattern)) {
+        alert("Please enter a valid mobile number");
+        return false;
+      }
+
+      if (!cardHolderName.match(namePattern)) {
+        alert("Please enter a valid card holder name");
+        return false;
+      }
+
+      if (!cardNumber.match(cardNumberPattern)) {
+        alert("Please enter a valid card number");
+        return false;
+      }
+
+      if (!cvv.match(cvvPattern)) {
+        alert("Please enter a valid CVV number");
+        return false;
+      }
+
+      // Additional validation logic can be added here
+
+      return true;
+    }
+  </script>
+</head>
+<body>
+   
+    
+    <br><br><br><br>
+  <h1>Payment</h1>
+  <form onsubmit="return validateForm()">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name"  required><br><br>
+
+    <label for="roomType">Type of Room:</label><br>
+    <select id="roomType" onchange="calculatePrice()" required>
+      <option value="">Select Room Type</option>
+      <option value="ac">AC</option>
+      <option value="general">General</option>
+      <option value="suite">Suite</option>
+      <option value="family">Family</option>
+    </select><br><br>
+
+    <label for="numRooms">Number of Rooms:</label><br>
+    <input type="number" id="numRooms" min="1" value="1" onchange="calculatePrice()" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" required><br><br>
+
+    <label for="mobile">Mobile Number:</label><br>
+    <input type="text" id="mobile" required><br><br>
+
+    <label for="cardHolderName">Card Holder Name:</label><br>
+    <input type="text" id="cardHolderName" required><br><br>
+
+    <label for="cardNumber">Card Number:</label><br>
+    <input type="text" id="cardNumber" required><br><br>
+
+    <label for="cvv">CVV:</label><br>
+    <input type="text" id="cvv" required><br><br>
+
+    <label for="price">Price:</label><br>
+    <input type="text" id="price" readonly><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+  </div>
+
+
+</body>
+</html>
